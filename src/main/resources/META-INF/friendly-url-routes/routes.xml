@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE routes PUBLIC "-//Liferay//DTD Friendly URL Routes 7.0.0//EN" "http://www.liferay.com/dtd/liferay-friendly-url-routes_7_0_0.dtd">
+
+<routes>
+    <route>
+        <pattern></pattern> <!-- http://localhost:8080/web/guest/home/-/shorturl/ -->
+        <implicit-parameter name="mvcRenderCommandName">/shorturl/view</implicit-parameter>
+        <implicit-parameter name="p_p_lifecycle">0</implicit-parameter>
+        <implicit-parameter name="p_p_state">normal</implicit-parameter>
+    </route>
+    <route>
+        <pattern>/maximized</pattern> <!-- http://localhost:8080/web/guest/home/-/maximized -->
+        <implicit-parameter name="mvcRenderCommandName">/shorturl/view</implicit-parameter>
+        <implicit-parameter name="p_p_lifecycle">0</implicit-parameter>
+        <implicit-parameter name="p_p_state">maximized</implicit-parameter>
+    </route>
+
+	<!--  http://localhost:8080/shorturl/edit_entry/-/entryid:12345 -->
+    <!--
+    <route>
+        <pattern>/{entryId:\d+}</pattern> 
+        <implicit-parameter name="categoryId"></implicit-parameter>
+        <implicit-parameter name="mvcRenderCommandName">/shorturl/edit_entry</implicit-parameter>
+        <implicit-parameter name="p_p_lifecycle">0</implicit-parameter>
+        <implicit-parameter name="p_p_state">normal</implicit-parameter>
+        <implicit-parameter name="tag"></implicit-parameter>
+    </route>
+  	-->
+</routes>
