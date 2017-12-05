@@ -16,14 +16,12 @@
     </route>
 
 	<!--  http://localhost:8080/shorturl/edit_entry/-/entryid:12345 -->
-    <!--
     <route>
-        <pattern>/{entryId:\d+}</pattern> 
-        <implicit-parameter name="categoryId"></implicit-parameter>
-        <implicit-parameter name="mvcRenderCommandName">/shorturl/edit_entry</implicit-parameter>
+        <pattern>/w/{word}/{word2}/{word3}</pattern> 
+        <!--  <implicit-parameter name="categoryId"></implicit-parameter> -->
+        <implicit-parameter name="mvcRenderCommandName">/shorturl/view</implicit-parameter>
         <implicit-parameter name="p_p_lifecycle">0</implicit-parameter>
-        <implicit-parameter name="p_p_state">normal</implicit-parameter>
+        <implicit-parameter name="p_p_state">maximized</implicit-parameter>
         <implicit-parameter name="tag"></implicit-parameter>
     </route>
-  	-->
 </routes>

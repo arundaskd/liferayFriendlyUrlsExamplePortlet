@@ -23,7 +23,7 @@ public class ShortUrlMVCRenderCommand implements MVCRenderCommand {
 	@Override
 	public String render(RenderRequest renderRequest, RenderResponse renderResponse) throws PortletException {
 
-		System.out.println("executing ShortUrlMVCRendererCommand's render method ");
+		System.out.println("executing ShortUrlMVCRendererCommand's render method "+renderRequest.getParameter("word2"));
 
 		return "/view.jsp";
 		//return "/sample_mvc_render_command.jsp";
