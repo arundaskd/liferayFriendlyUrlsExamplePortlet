@@ -17,7 +17,7 @@
 
 	<!--  http://localhost:8080/shorturl/edit_entry/-/entryid:12345 -->
     <route>
-        <pattern>/w/{word}/{word2}/{word3}</pattern> 
+        <pattern>/w/{word}</pattern> 
         <!--  <implicit-parameter name="categoryId"></implicit-parameter> -->
         <implicit-parameter name="mvcRenderCommandName">/shorturl/view</implicit-parameter>
         <implicit-parameter name="p_p_lifecycle">0</implicit-parameter>
